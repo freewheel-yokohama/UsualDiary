@@ -16,15 +16,15 @@
 <body>
 <div class="accbox">
 
-<h3>カレンダーと日記</h3>
+<h3>カレンダー画面</h3>
 <input type='checkbox' id='menu1' class='cssacc' /><label for='menu1'>表示モード</label> <div class='accshow'>
-表示モードには「月表示」「週表示」「日表示」の３種類があります。<br>
+表示モードには"月表示"、"週表示"、"日表示"の３種類があります。<br>
 <ul>
 <li>月表示・・・上部に１ヶ月のカレンダー、その下に選択中の日付とその日に登録されている日記が表示されます</li>
 <li>週表示・・・上部に１週間のカレンダー、その下に選択中の日付とその日に登録されている日記が表示されます</li>
 <li>日表示・・・ヘッダーに選択中の日付が表示され、その下に登録されている日記が表示されます</li>
 </ul>
-「月表示」「週表示」ではカレンダー部分を左右にドラッグして前後の月に移動します。<br>
+"月表示"、"週表示"ではカレンダー部分を左右にドラッグして前後の月、週に移動できます。<br>
  </div>
 
 <input type='checkbox' id='menu2' class='cssacc' /><label for='menu2'>表示モードの変更</label> <div class='accshow'>
@@ -33,150 +33,232 @@
 
 <input type='checkbox' id='menu3' class='cssacc' /><label for='menu3'>日付の選択</label> <div class='accshow'>
 <ul>
-<li>カレンダーで選択・・・週、月モードのときはカレンダーの日付をタップするとその日に移動します。</li>
-<li>スワイプによる移動・・・日記表示部分を左右にスワイプすると前後の日付に移動します。</li>
-<li>今日への移動・・・左下の"Today"ボタンをタップすると今日に移動します。</li>
-<li>ジャンプによる移動・・・"Today"ボタンを長押しすると４つのジャンプボタンが表示されます。ジャンプボタンが表示されている状態でふたたび"Today"を長押しすると非表示になります。
+<li>カレンダーで選択・・・表示モードが週表示、月表示のときはカレンダーの日付をタップするとその日に移動します。</li>
+<li>スワイプによる移動・・・カレンダーの下の日記表示部分を左右にスワイプすると前後の日付に移動します。</li>
+<li>今日への移動・・・左下の<img alt="Todayボタン" src="img/Today.png" class="Today"/>をタップすると今日に移動します。</li>
+<li>ジャンプによる移動・・・<img alt="Todayボタン" src="img/Today.png" class="Today"/>を長押しすると４つのジャンプボタンが表示されます。<br>
+  ジャンプボタンでは日記が登録されている日付にのみ移動します。
 <ul>
-<li>「先頭ボタン」：最も古い日付の日記に移動します</li>
-<li>「前ボタン」：表示中の日付より１つ古い日記に移動します。</li>
-<li>「次ボタン」：表示中の日付より１つ新しい日記に移動します。</li>
-<li>「最後ボタン」：最も新しい日記に移動します。</li>
+<li><img alt="先頭ボタン" src="img/JumpFirst.png" class="JumpFirst"/>：最も古い日付の日記に移動します</li>
+<li><img alt="前ボタン" src="img/JumpPrev.png" class="JumpPrev"/>：表示中の日付より１つ古い日記に移動します。</li>
+<li><img alt="次ボタン" src="img/JumpNext.png" class="JumpNext"/>：表示中の日付より１つ新しい日記に移動します。</li>
+<li><img alt="最後ボタン" src="img/JumpLast.png" class="JumpLast"/>：最も新しい日記に移動します。</li>
 </ul>
+ジャンプボタンが表示されている状態でふたたび<img alt="Todayボタン" src="img/Today.png" class="Today"/>を長押しすると非表示になります。
 </li>
 </ul>
  </div>
 
-<input type='checkbox' id='menu4' class='cssacc' /><label for='menu4'>カレンダーの表示内容</label> <div class='accshow'>
-カレンダーの各日付には日記に設定されているアイコンが表示されます。日記にアイコンが設定されていない場合は<img alt="チェックマーク" src="img/DefaultImageTag.png" width="24" height="17"/>が表示されます。<br>
-その日の日記に複数のアイコンが設定されている場合は最大４つまで表示されます。５つ以上のアイコンが設定されている場合は４つ目に<img alt="省略記号" src="img/More.png" width="20" height="20"/>が表示されます。<br>
+<input type='checkbox' id='menu4' class='cssacc' /><label for='menu4'>カレンダー日付の表示内容</label> <div class='accshow'>
+カレンダーの各日付には日記に設定されているアイコンが表示されます。<br>
+日記にアイコンが設定されていない場合は<img alt="チェックマーク" src="img/DefaultImageTag.png" class="DefaultImageTag"/>が表示されます。<br>
+その日の日記に複数のアイコンが設定されている場合は最大４つまで表示されます。<br>
+５つ以上のアイコンが設定されている場合は４つ目に<img alt="省略記号" src="img/More.png" class="More"/>が表示されます。<br>
 今日の日付は数字部分が赤で表示されます。<br>
 選択中の日付はテーマカラーで選択されている色で表示されます。<br>
  </div>
 
-<input type='checkbox' id='menu5' class='cssacc' /><label for='menu5'>写真の表示</label> <div class='accshow'>
-カレンダー上では写真は正方形のサムネイルで表示されます。見たい写真をタップすると画面全体に写真が表示されます。<br>
-日記に複数の写真が添付されている場合には左右にドラッグすることで移動できます。<br>
-また、２本の指を使ってピンチアウト、ピンチインすることで拡大、縮小表示できます。拡大は最大で元の表示の３倍までとなっています。元のサイズより縮小して表示することはできません。<br>
-また、拡大表示中にタップすると元のサイズに戻ります。<br>
-拡大表示中には左右の写真への移動はできません。ピンチインまたはタップして拡大を解除してから左右のドラッグで移動してください。<br>
-拡大されていない状態で写真をタップすると写真を閉じてカレンダー表示に戻ります。<br>
- </div>
-
-<input type='checkbox' id='menu6' class='cssacc' /><label for='menu6'>日記の表示順を変える</label> <div class='accshow'>
-１日に複数の日記があるときに表示順を変更できます。一番下の日記の右下にある<img alt="入れ替えマーク" src="img/Swap.png" width="26" height="16"/>をタップすると日記と日記の間に<img alt="入れ替えマーク" src="img/Swap.png" width="26" height="16"/>が表示されます。その<img alt="入れ替えマーク" src="img/Swap.png" width="26" height="16"/>をタップするとその上下の日記の表示順が入れ替わります。もう一度右下の<img alt="入れ替えマーク" src="img/Swap.png" width="26" height="16"/>をタップすると日記間の<img alt="入れ替えマーク" src="img/Swap.png" width="26" height="16"/>の表示が消えます。<br>
- </div>
-
-<input type='checkbox' id='menu7' class='cssacc' /><label for='menu7'>日記の編集</label> <div class='accshow'>
-カレンダーの日記表示部分にある<img alt="プラスマーク" src="img/Plus.png" width="20" height="20"/>をタップすると選択中の日付で日記を作成できます。<br>
-日記の新規作成時には文章の入力状態で開きます。<br>
-また、登録済みの日記をダブルタップするとその日記を編集できます。<br>
- </div>
-
-<input type='checkbox' id='menu8' class='cssacc' /><label for='menu8'>日記の登録</label> <div class='accshow'>
-編集が終了したら右上の<img alt="チェックマーク" src="img/Plus.png" width="20" height="20"/>をタップして保存します。なお、日記に文章または写真が登録されていないときは破棄されます。（アイコンのみの登録はできません）<br>
- </div>
-
-<input type='checkbox' id='menu9' class='cssacc' /><label for='menu9'>日記の削除</label> <div class='accshow'>
-左上の<img alt="ゴミ箱マーク" src="img/Trush.png" width="20" height="26"/>をタップすると日記が削除されます。注）削除された日記とそこに添付されていた写真は元には戻せませんのでご注意ください。<br>
- </div>
-
-<input type='checkbox' id='menu10' class='cssacc' /><label for='menu10'>アイコン設定</label> <div class='accshow'>
-日記編集画面で<img alt="星マーク" src="img/IconTag.png" width="20" height="20"/>をタップするとアイコン選択画面が開きます。設定したいアイコンをタップして設定してください。選択中のアイコンには<img alt="チェックマーク" src="img/CircleCheck.png" width="20" height="20"/>が付きます。選択中のアイコンを再びタップすると選択が解除されます。また、"クリア"をタップすると選択中のアイコンが全てクリアされます。<br>
- </div>
-
-<input type='checkbox' id='menu11' class='cssacc' /><label for='menu11'>レイアウト設定</label> <div class='accshow'>
-日記編集画面で<img alt="レイアウトマーク" src="img/Layout.png" width="20" height="20"/>をタップするとレイアウト選択画面が開きます。文章と写真の配置および文章のアライメントの選択ができます。次回編集時には選択されたレイアウトとアライメントで作成されます。<br>
- </div>
-
-<input type='checkbox' id='menu12' class='cssacc' /><label for='menu12'>写真添付</label> <div class='accshow'>
-日記編集画面で<img alt="写真マーク" src="img/Picture.png" width="30" height="24"/>をタップすると写真選択画面が開きます。フォトストリームに日記の日付に該当する写真がある場合は"Day"にその写真が表示されます。その他の写真は"All"に日付の新しいものから順に表示されます。日記に添付したい写真を選択して<img alt="閉じるマーク" src="img/DownSingleArrow.png" width="19" height="11"/>をタップすると写真が添付されます。なお、一度に選択できる枚数は１０枚までとなっています。添付する枚数に制限は設けていませんが大量の写真を添付する場合はアプリのデータ容量に十分注意してください。<br>
- </div>
-
-<input type='checkbox' id='menu13' class='cssacc' /><label for='menu13'>写真削除と移動</label> <div class='accshow'>
-日記編集画面で添付済みの写真をタップすると写真上に削除ボタン<img alt="削除マーク" src="img/PhotoDelete.png" width="20" height="20"/>と移動ボタン<img alt="三角マーク" src="img/PhotoRight.png" width="11" height="15"/>が表示されます（移動ボタンは写真が複数あるときのみ表示されます。また移動が可能な方向のみ表示されます）。削除ボタンをタップすると添付した写真が削除されます。また、移動ボタンをタップするとその方向にある写真と入れ替わります。注）一度削除した写真は元には戻せませんのでご注意ください。iPhoneのフォトストリームとは別の本アプリ内に保存している写真データを削除するものです。<br>
- </div>
-
-<input type='checkbox' id='menu14' class='cssacc' /><label for='menu14'>文章編集</label> <div class='accshow'>
-日記編集画面で文章部分をタップまたは<img alt="ペンマーク" src="img/Pen.png" width="20" height="20"/>をタップすると文章の入力に移ります。<br>
- </div>
-
-<input type='checkbox' id='menu15' class='cssacc' /><label for='menu15'>入力文字の属性変更</label> <div class='accshow'>
-文章入力中のキーボード上の「Ax」をタップすると入力文字の属性を変更できます。文字の属性は「色」「太字」「斜め文字」「影付き」「中抜き」「下線」「サイズ」を変更できます。「太字」と「中抜き」はどちらか一方のみ選択可能です。また、「下線」は３種類の中から１つ選択可能です。属性変更後「A」または<img alt="戻るマーク" src="img/ReturnArrow.png" width="27" height="30"/>をタップすると入力状態に戻ります。以降入力された文字は変更後の属性で入力されます。<br>
- </div>
-
-<input type='checkbox' id='menu16' class='cssacc' /><label for='menu16'>入力済み文字の属性変更</label> <div class='accshow'>
-すでに文章が入力されている状態で、入力されている文章を長押しすると文字列を選択することができます（iPhoneの操作を参照）。文字列が選択されている状態になると「A」→「A」に変化します。この状態で「Ax」をタップするとすでに入力されている文字列の属性を変更することができます。なお、属性変更画面にう道したときの状態は、選択されている文字列の最初の文字の属性になっています。<br>
- </div>
-
 <input type='checkbox' id='menu17' class='cssacc' /><label for='menu17'>フィルター</label> <div class='accshow'>
-画面上の<img alt="フィルターマーク" src="img/Filter.png" width="20" height="20"/>をタップするとフィルター選択画面が開きます。<br>
+画面上の<img alt="フィルターマーク" src="img/Filter.png" class="Filter"/>をタップするとフィルター選択画面が開きます。<br>
 日記に設定されているアイコンでフィルターを設定できます。フィルターが設定されているときはそのアイコンが設定されている日記だけが表示対象になります。<br>
-たとえば、同じテーマの日記に同じアイコンを設定しておけばフィルターを設定することでそのテーマの日記だけを表示することができます。<br>
-フィルター設定中はジャンプボタンによる移動も表示対象の日記を移動します。<br>
-注）時々やってしまう勘違い。例えば、フィルター設定中に新しく日記を書いて、戻ってきたときにその日記が表示されずに戸惑うことがあります。新しく書いた日記にフィルター設定中のアイコンがない場合はカレンダーに戻ってきてもその日記は表示されません。フィルターを外してご確認ください。<br>
+たとえば、同じテーマの日記に同じアイコンを設定しておけば、フィルターを設定することでそのテーマの日記だけを表示することができます。<br>
+フィルター設定中はジャンプボタンによる移動も表示対象の日記を移動します。（ジャンプボタンについては「日付の選択」を参照）<br>
+設定されているフィルターを解除するときは<img alt="クリアマーク" src="img/Clear.png" class="Clear"/>をタップしてください。<br>
+注意！！時々やってしまう勘違い。例えば、フィルター設定中に新しく日記を書いて、戻ってきたときにその日記が表示されずに戸惑うことがあります。<br>
+新しく書いた日記にフィルター設定中のアイコンがない場合はカレンダーに戻ってきてもその日記は表示されません。フィルターを外してご確認ください。<br>
  </div>
 
 <input type='checkbox' id='menu18' class='cssacc' /><label for='menu18'>覗き見防止</label> <div class='accshow'>
-画面上の<img alt="明るさマーク" src="img/Light.png" width="20" height="20"/>をタップすると日記の表示濃度を変更できます。日記、アイコン、写真について表示の濃さを変更できます。<br>
-一度タップすると薄い表示になり、もう一度タップすると濃い表示に戻ります。次回起動したときにもそのままの設定で表示されます。<br>
+画面上の<img alt="明るさマーク" src="img/Light.png" class="Light"/>をタップすると日記、アイコン、写真の表示の濃さを切り替えられます。<br>
+一度タップすると薄い表示になり、もう一度タップすると濃い表示に戻ります。<br>
 この機能で覗き見を完全に防止できるものではありませんが、離れた位置からは見えにくくする効果があります。<br>
-人混みの中で開いたときに周りの人達から見えにくくしたいときなどにご利用ください。<br>
+人混みの中で開いたときなど、周りの人達から見えにくくしたいときにご利用ください。<br>
 ただし、あくまで表示を薄くするだけで絶対に見られないというものではありませんので、ご理解の上ご活用ください。<br>
-切替時の濃度については「日記の設定」画面で変更できます。<br>
+なお、切替時の表示濃度については「日記の設定」画面で変更できます。<br>
  </div>
 
 <input type='checkbox' id='menu19' class='cssacc' /><label for='menu19'>検索</label> <div class='accshow'>
-画面上の<img alt="虫眼鏡マーク" src="img/Search.png" width="20" height="20"/>をタップすると検索画面に移ります。<br>
+画面上の<img alt="虫眼鏡マーク" src="img/Search.png" class="Search"/>をタップすると検索画面に移ります。<br>
 検索画面では文字列で日記を検索できます。文字列は空白で区切って複数指定できます。複数指定した場合はすべての文字列が含まれている日記が対象になります。<br>
 検索結果は日付の小さい方から最大で３０件まで表示されます。３０件以上の結果があった場合は以降の結果は省略されます。<br>
 また、フィルターが設定されている場合にはフィルターで絞り込まれた中から検索されます。（あるはずの文字列が検索で出てこないときはフィルターが設定されていないかご確認ください）<br>
  </div>
 
-<input type='checkbox' id='menu20' class='cssacc' /><label for='menu20'>日記の設定</label> <div class='accshow'>
-<ul>
-<li>週の始まり・・・カレンダーの週始まりの曜日を設定します</li>
-<li>行間・文字間・・・サンプルの文章の周りの縦、横のスレイダーで行間と文字間隔を設定します。ここでの設定は全ての日記の表示に反映されます。</li>
-<li>覗き見防止の濃淡・・・覗き見防止ボタンで切り替えたときの薄さ、濃さを設定します。薄いとき、濃いときの２つが設定できます。サンプル文章の右上の<img alt="明るさマーク" src="img/Light.png" width="20" height="20"/>をタップすると切り替えたときの薄さが確認できます。ここで設定したあと、カレンダー画面に戻ってから<img alt="明るさマーク" src="img/Light.png" width="20" height="20"/>を押すと変更後の薄い表示に切り替わります。その後は薄い表示と濃い表示が交互に切り替わります</li>
-<li>カラーテーマ・・・４種類のテーマカラーから選択できます。</li>
-<li>通知からのひとことに時刻を追記・・・通知からひとこと登録を行った際に、日記の先頭に時刻を追記するか、しないかを設定します。</li>
-</ul>
+<input type='checkbox' id='menu5' class='cssacc' /><label for='menu5'>写真の表示</label> <div class='accshow'>
+カレンダー上では写真は正方形のサムネイルで表示されます。見たい写真をタップすると画面全体に写真が表示されます。<br>
+日記に複数の写真が添付されている場合には左右にドラッグすることで移動できます。<br>
+また、２本の指を使ってピンチアウト、ピンチインすることで拡大、縮小表示できます。<br>
+拡大は最大で元の表示の３倍までとなっています。元のサイズより縮小して表示することはできません。<br>
+また、拡大表示中に写真をタップすると元のサイズに戻ります。<br>
+拡大表示中には左右の写真への移動はできません。ピンチインまたはタップし拡大を解除してから左右のドラッグで移動してください。<br>
+拡大されていない状態で写真をタップすると写真を閉じてカレンダー表示に戻ります。<br>
  </div>
+
+<input type='checkbox' id='menu6' class='cssacc' /><label for='menu6'>日記の表示順を変える</label> <div class='accshow'>
+１日に複数の日記があるときに表示順を変更できます。<br>
+一番下の日記の右下にある<img alt="入れ替えモードマーク" src="img/SwapSwitch.png" class="SwapSwitch"/>をタップすると日記と日記の間に<img alt="入れ替えマーク" src="img/Swap.png" class="Swap"/>が表示されます。<br>
+その<img alt="入れ替えマーク" src="img/Swap.png" class="Swap"/>をタップするとその上下の日記の表示順が入れ替わります。<br>
+もう一度右下の<img alt="入れ替えモードマーク" src="img/SwapSwitch.png" class="SwapSwitch"/>をタップすると日記間の<img alt="入れ替えマーク" src="img/Swap.png" class="Swap"/>の表示が消えます。<br>
+ </div>
+
+<h3>日記の編集</h3>
+
+<input type='checkbox' id='menu8' class='cssacc' /><label for='menu8'>日記の登録</label> <div class='accshow'>
+カレンダーの日記表示部分にある<img alt="プラスマーク" src="img/ArticlePlus.png" class="ArticlePlus"/>をタップすると選択中の日付で日記を作成できます。<br>
+日記の新規作成時には文章の入力状態で開きます。<br>
+また、登録済みの日記をダブルタップするとその日記を編集できます。<br>
+編集が終了したら右上の<img alt="チェックマーク" src="img/Check.png" class="Check"/>をタップして保存します。<br>
+なお、日記に文章、写真のどちらも入力がない状態で登録すると日記は破棄されます。（空の状態やアイコンのみの登録はできません）<br>
+登録済みの日記の編集時に元の状態に戻すようなキャンセルの機能はありません<br>
+ </div>
+
+<input type='checkbox' id='menu9' class='cssacc' /><label for='menu9'>日記の削除</label> <div class='accshow'>
+日記編集画面で<img alt="ゴミ箱マーク" src="img/Trush.png" class="Trush"/>をタップすると日記が削除されます。<br>
+注意！！削除された日記とそこに添付されていた写真は元には戻せませんのでご注意ください。<br>
+ </div>
+
+<input type='checkbox' id='menu10' class='cssacc' /><label for='menu10'>アイコン設定</label> <div class='accshow'>
+日記編集画面で<img alt="星マーク" src="img/IconTag.png" class="IconTag"/>をタップするとアイコン選択画面が開きます。<br>
+日記に設定したいアイコンをタップして設定してください。<br>
+選択中のアイコンには<img alt="チェックマーク" src="img/CircleCheck.png" class="CircleCheck"/>が付きます。<br>
+選択中のアイコンを再びタップすると選択が解除されます。<br>
+また、<img alt="クリアマーク" src="img/Clear.png" class="Clear"/>をタップすると選択中のアイコンが全てクリアされます。<br>
+ </div>
+
+<input type='checkbox' id='menu11' class='cssacc' /><label for='menu11'>レイアウト設定</label> <div class='accshow'>
+日記編集画面で<img alt="レイアウトマーク" src="img/Layout.png" class="Layout"/>をタップするとレイアウト選択画面が開きます。<br>
+文章と写真の配置および文章のアライメントの選択ができます。<br>
+次回日記作成時には選択されたレイアウトとアライメントで作成されます。<br>
+</div>
+
+<input type='checkbox' id='menu12' class='cssacc' /><label for='menu12'>写真添付</label> <div class='accshow'>
+日記編集画面で<img alt="写真マーク" src="img/Picture.png" class="Picture"/>をタップすると写真選択画面が開きます。<br>
+iPhoneのフォトストリームに編集中の日記の日付に該当する写真がある場合は"Day"にその写真が表示されます。<br>
+その他の写真は"All"に日付の新しいものから順に表示されます。<br>
+日記に添付したい写真を選択して<img alt="閉じるマーク" src="img/DownSingleArrow.png" class="DownSingleArrow"/>をタップすると写真が添付されます。<br>
+なお、一度に選択できる枚数は１０枚までとなっています。<br>
+添付する枚数に制限は設けていませんが、大量の写真を添付する場合はアプリのデータ容量に十分注意してください。<br>
+ </div>
+
+<input type='checkbox' id='menu13' class='cssacc' /><label for='menu13'>写真削除と移動</label> <div class='accshow'>
+日記編集画面で添付済みの写真をタップすると写真上に削除ボタン<img alt="削除マーク" src="img/PhotoDelete.png" class="PhotoDelete"/>と移動ボタン<img alt="三角マーク" src="img/PhotoRight.png" class="PhotoRight"/>が表示されます（移動ボタンは写真が複数あるときのみ表示されます。また移動が可能な方向のみ表示されます）。<br>
+削除ボタンをタップすると添付した写真が削除されます。<br>
+また、移動ボタンをタップするとその方向にある写真と入れ替わります。<br>
+注意！！一度削除した写真は元には戻せませんのでご注意ください。<br>
+写真データは本アプリ内に保存されていてiPhoneのフォトストリームとは別のデータになっています。<br>
+</div>
+
+<input type='checkbox' id='menu14' class='cssacc' /><label for='menu14'>文章編集</label> <div class='accshow'>
+日記編集画面で文章部分をタップまたは<img alt="ペンマーク" src="img/Pen.png" class="Pen"/>をタップすると文章の入力に移ります。<br>
+ </div>
+
+<input type='checkbox' id='menu15' class='cssacc' /><label for='menu15'>入力文字の属性変更</label> <div class='accshow'>
+文章入力中のキーボード上の<img alt="属性マーク" src="img/TextAttribute.png" class="TextAttribute"/>をタップすると入力文字の属性を変更できます。<br>
+文字の属性は「色」「太字」「斜め文字」「影付き」「中抜き」「下線」「サイズ」を変更できます。<br>
+「太字」と「中抜き」はどちらか一方のみ選択可能です。また、「下線」は３種類の中から１つ選択可能です。<br>
+属性変更後<img alt="属性マーク" src="img/TextAttribute.png" class="TextAttribute"/>または<img alt="戻るマーク" src="img/ReturnArrow.png" class="ReturnArrow"/>をタップすると入力状態に戻ります。<br>
+以降入力された文字は変更後の属性で入力されます。<br>
+ </div>
+
+<input type='checkbox' id='menu16' class='cssacc' /><label for='menu16'>入力済み文字の属性変更</label> <div class='accshow'>
+すでに文章が入力されている状態で、入力されている文章を長押しすると文字列を選択することができます。<br>
+文字列が選択されている状態になると<img alt="属性マーク" src="img/TextAttribute.png" class="TextAttribute"/>→<img alt="属性マーク" src="img/SelectedAttribute.png" class="SelectedAttribute"/>に変化します。<br>
+この状態で<img alt="属性マーク" src="img/SelectedAttribute.png" class="SelectedAttribute"/>をタップするとすでに入力されている文字列の属性を変更することができます。<br>
+なお、属性変更画面に移動したときの属性は、選択されている文字列の最初の文字の属性になっています。<br>
+ </div>
+
+<h3>日記の設定</h3>
+
+<input type='checkbox' id='menu20' class='cssacc' /><label for='menu20'>日記の設定について</label> <div class='accshow'>
+  画面左上の<img alt="設定マーク" src="img/Setting.png" class="Setting"/>をタップすると設定画面が開きます<br>
+  そこから"日記の設定"を選択します<br>
+</div>
+
+<input type='checkbox' id='menu35' class='cssacc' /><label for='menu35'>週の始まり</label> <div class='accshow'>
+カレンダーの表示で週始まりの曜日を設定します<br>
+</div>
+
+<input type='checkbox' id='menu36' class='cssacc' /><label for='menu36'>行間・文字間</label> <div class='accshow'>
+サンプルの文章の周りの縦、横のスレイダーで行間と文字間隔を設定します。<br>
+行間、文字間はすべての日記に共通の設定です<br>
+</div>
+
+<input type='checkbox' id='menu37' class='cssacc' /><label for='menu37'>覗き見防止の濃淡</label> <div class='accshow'>
+覗き見防止ボタンで切り替えたときの濃度を設定します。薄いとき、濃いときの２つが設定できます。<br>
+サンプル文章の右上の<img alt="明るさマーク" src="img/Light.png" class="Light"/>をタップすると切り替えたときの薄さが確認できます。<br>
+設定を変更したあとカレンダー画面に戻ってから<img alt="明るさマーク" src="img/Light.png" class="Light"/>を押すと変更後の薄い表示に切り替わります。<br>
+それ以降は薄い表示と濃い表示が交互に切り替わります<br>
+</div>
+
+<input type='checkbox' id='menu38' class='cssacc' /><label for='menu38'>カラーテーマ</label> <div class='accshow'>
+４種類のテーマカラーから選択できます。<br>
+</div>
+
+<input type='checkbox' id='menu39' class='cssacc' /><label for='menu39'>通知からのひとことに時刻を追記</label> <div class='accshow'>
+通知からひとこと登録を行った際に、日記の先頭に時刻を追記するか、しないかを設定します<br>
+</div>
+
 <h3>テンプレート</h3>
 <input type='checkbox' id='menu21' class='cssacc' /><label for='menu21'>テンプレートについて</label> <div class='accshow'>
 毎日同じような内容の日記をつけるときなど、文章の同じ文言部分やアイコンを予めテンプレートとして登録しておくことができます。<br>
 テンプレートでは日記と同様にアイコン、レイアウト、文章が登録できます。<br>
-カレンダーの日記表示部分にある<img alt="Tマーク" src="img/Template.png" width="20" height="20"/>をタップするとテンプレート一覧が開きます。<br>
+カレンダーの日記表示部分にある<img alt="Tマーク" src="img/ArticleTemplate.png" class="ArticleTemplate"/>をタップするとテンプレート一覧が開きます。<br>
  </div>
 
 <input type='checkbox' id='menu22' class='cssacc' /><label for='menu22'>テンプレートの登録</label> <div class='accshow'>
-新しくテンプレートを登録するときはテンプレート一覧の<img alt="プラスマーク" src="img/Plus.png" width="20" height="20"/>をタップしてテンプレートの登録画面を開きます。<br>
+新しくテンプレートを登録するときはテンプレート一覧の<img alt="プラスマーク" src="img/Plus.png" class="Plus"/>をタップしてテンプレートの登録画面を開きます。<br>
+タイトル（任意）、アイコン、レイアウト、文章を入力して右上の<img alt="チェックマーク" src="img/Check.png" class="Check"/>をタップして保存します。<br>
+空のテンプレートやタイトルのみのテンプレートは保存できません。<br>
  </div>
 
 <input type='checkbox' id='menu23' class='cssacc' /><label for='menu23'>テンプレートの利用</label> <div class='accshow'>
-テンプレートを元に日記をつけるときはテンプレート一覧からテンプレートを選択します。テンプレートの内容が反映された状態で新しい日記の編集画面が開きます。<br>
+テンプレートを元に日記をつけるときはテンプレート一覧から目的のテンプレートを選択します。<br>
+テンプレートの内容が反映された状態で新しい日記の編集画面が開きます。<br>
  </div>
-
-
-<input type='checkbox' id='menu24' class='cssacc' /><label for='menu24'>テンプレートの削除</label> <div class='accshow'>
-テンプレート一覧で対象の行を左にスライドして「削除」を選ぶか、「編集」を選んでから<img alt="ゴミ箱マーク" src="img/Trush.png" width="20" height="26"/>をタップしてください。ただし、対象のテンプレートが通知に利用されている場合は削除できません。その場合は通知の編集で使用しているテンプレートを解除してからテンプレートの削除を行こなってください。注）削除されたテンプレートは元に戻せませんのでご注意ください。<br>
- </div>
-
 
 <input type='checkbox' id='menu25' class='cssacc' /><label for='menu25'>テンプレートの編集</label> <div class='accshow'>
 テンプレートを編集するには一覧で対象のテンプレートの行を左にスライドして「編集」を選択します。<br>
  </div>
 
+<input type='checkbox' id='menu24' class='cssacc' /><label for='menu24'>テンプレートの削除</label> <div class='accshow'>
+テンプレート一覧で対象の行を左にスライドして「削除」を選ぶか、「編集」を選んでから<img alt="ゴミ箱マーク" src="img/Trush.png" class="Trush"/>をタップしてください。<br>
+ただし、対象のテンプレートが通知に利用されている場合は削除できません。その場合は通知で使用しているテンプレートを解除してから削除してください。（通知に設定するテンプレートについては「通知の登録」および「通知のときのアクション」を参照）<br>
+注意！！削除されたテンプレートは元に戻せませんのでご注意ください。<br>
+ </div>
+
+
 <h3>通知</h3>
 <input type='checkbox' id='menu26' class='cssacc' /><label for='menu26'>通知について</label> <div class='accshow'>
-日記をつけ忘れないように、また、ある時刻のタイミングで日記をつける習慣付けが出来るように時刻による通知が利用できます。当アプリで設定できる通知は以下のとおりです。<br>
+日記をつけ忘れないように、また、ある時刻のタイミングで日記をつける習慣付けが出来るように時刻による通知が利用できます。<br>
+画面左上の<img alt="設定マーク" src="img/Setting.png" class="Setting"/>をタップすると設定画面が開きます<br>
+そこから"通知の設定"を選択します<br>
+当アプリで設定できる通知は以下のとおりです。<br>
 <ul>
 <li>毎日・・・毎日設定した時刻に通知されます</li>
 <li>毎週・・・選択された曜日の指定時刻に通知されます。</li>
 <li>１回・・・指定した日付の指定時刻に通知されます。</li>
-<li>アプリを利用したｘ日後・・・このアプリを利用してから指定日数たったときに指定時刻に通知されます。その間にこのアプリを開くとその時点からまた指定日数たったときに通知されます。日数は１〜５日の間で指定します。</li>
+<li>アプリを利用したｘ日後・・・このアプリを利用してから指定日数たったときに指定時刻に通知されます。<br>
+  通知前にアプリを開くとその時点からまた指定日数たったときに通知されます。<br>
+  日数は１〜５日の間で指定します。</li>
 </ul>
 なお、当アプリを開いている間は通知は行われません。<br>
+ </div>
+
+<input type='checkbox' id='menu28' class='cssacc' /><label for='menu28'>通知の登録</label> <div class='accshow'>
+通知一覧から右上の<img alt="プラスマーク" src="img/Plus.png" class="Plus"/>をタップすると新しい通知の登録ができます。<br>
+通知時刻、種類の選択と種類に応じて曜日、日付、日数の設定、通知のときに表示されるタイトル、サブタイトル（任意）、メッセージを登録します。<br>
+通知からアプリを開いたときには、その日の日記登録が開きます。<br>
+通知にテンプレートを設定しておくと、通知から開いたときにそのテンプレートが適用された形で開きます。<br>
+テンプレートを設定したい場合は、通知登録画面の"テンプレートは設定されていません・・・・"の文言部分をタップしてテンプレート一覧から選択してください。<br>
+有効・無効スイッチを切り替えると一時的に無効に（通知が来ないように）することもできます。<br>
+ </div>
+
+<input type='checkbox' id='menu29' class='cssacc' /><label for='menu29'>通知の編集</label> <div class='accshow'>
+通知一覧から編集する通知をタップして編集に入ります。<br>
+ </div>
+
+<input type='checkbox' id='menu30' class='cssacc' /><label for='menu30'>通知の削除</label> <div class='accshow'>
+編集画面の<img alt="ゴミ箱マーク" src="img/Trush.png" class="Trush"/>をタップしてください。<br>
  </div>
 
 <input type='checkbox' id='menu27' class='cssacc' /><label for='menu27'>通知のときのアクション</label> <div class='accshow'>
@@ -185,24 +267,13 @@
 <li>開く・・・その日の新しい日記を作成します。そのとき、通知にテンプレートが設定されていればそのテンプレートをベースに新しい日記が作成されます。</li>
 <li>今から１時間後に通知・・・タップした時刻から１時間後に再度通知します</li>
 <li>明日の設定時刻と同時刻に通知・・・次の日のその通知に設定されている時刻と同時刻に再度通知します。</li>
-<li>ひとこと登録・・・新しい日記を作成してそこにひとこと登録します。１行だけの短い文章が登録できます。日記の設定で時刻を追記する設定になっているときは日記の先頭にその時の時刻が追記されます。また、この場合も通知にテンプレートが設定されていればそのテンプレートが適用されます。このとき時刻は文章の先頭に付与され、入力したひとことは文章の末尾に追記されます。</li>
+<li>ひとこと登録・・・アプリを開かずに新しい日記に１行だけの短い文章が登録できます。<br>
+  日記の設定で時刻を追記する設定になっているときは日記の先頭にその時の時刻が追記されます。<br>
+また、この場合も通知にテンプレートが設定されていればそのテンプレートが適用されます。<br>
+このとき時刻は文章の先頭に付与され、入力したひとことは文章の末尾に追記されます。</li>
 </ul>
  </div>
 
-<input type='checkbox' id='menu28' class='cssacc' /><label for='menu28'>通知の登録</label> <div class='accshow'>
-通知の設定はカレンダー左上の「設定」をタップして、設定メニューから「通知の設定」を選択してください。通知一覧から右上の<img alt="プラスマーク" src="img/Plus.png" width="20" height="20"/>をタップすると新しい通知の設定ができます。<br>
-通知では、時刻の設定および、種類の選択と種類に応じて曜日、日付、日数など必要な設定を行ってください。<br>
-また、テンプレートを設定したい場合は、通知のときに適用するテンプレート部分をタップしてテンプレート一覧から選択してください。<br>
-有効・無効スイッチを切り替えること一時的に無効に（通知が来ないように）することもできます。<br>
- </div>
-
-<input type='checkbox' id='menu29' class='cssacc' /><label for='menu29'>通知の編集</label> <div class='accshow'>
-通知一覧から編集する通知をタップして編集に入ります。<br>
- </div>
-
-<input type='checkbox' id='menu30' class='cssacc' /><label for='menu30'>通知の削除</label> <div class='accshow'>
-編集画面の<img alt="ゴミ箱マーク" src="img/Trush.png" width="20" height="26"/>をタップしてください。<br>
- </div>
 
 <h3>その他</h3>
 <input type='checkbox' id='menu31' class='cssacc' /><label for='menu31'>バックアップ</label> <div class='accshow'>
@@ -220,7 +291,7 @@ iPhoneのバックアップ方法についてはアップル社のホームペ�
 広告非表示の課金前には、カレンダー下のバナー広告と定期的に全画面広告を表示させていただいています。<br>
 テンプレートの作成制限解除の課金前には、テンプレートの作成数に制限を設けさせていただいております。<br>
 今後とも良いアプリをご提供していくためとご理解いただければ幸いです。<br>
-また、当アプリをご愛用いただけるようでしたら購入のご検討をぜひよろしくお願いします。<br>
+当アプリをご愛用いただけるようでしたら購入のご検討をぜひよろしくお願いします。<br>
  </div>
 
 
