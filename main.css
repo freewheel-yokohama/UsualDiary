@@ -15,6 +15,7 @@
     background: #fff2cc;
     cursor :pointer;
     transition: all 0.5s;
+    font-family: "ヒラギノ丸ゴ ProN";
 }
 
 /*アイコンを表示*/
@@ -58,7 +59,6 @@
 .cssacc:checked + label:before {
     content: '\f078';
 }
-
 
 /* image size */
 img.Today {
