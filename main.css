@@ -42,6 +42,7 @@
     overflow: hidden;
     opacity: 0;
     transition: 0.8s;
+    font-family: "ヒラギノ丸ゴ ProN";
 }
 
 /*クリックで中身表示*/
