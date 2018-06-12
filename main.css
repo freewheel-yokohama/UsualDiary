@@ -42,7 +42,6 @@
     overflow: hidden;
     opacity: 0;
     transition: 0.8s;
-    font-family: "ヒラギノ丸ゴ ProN";
 }
 
 /*クリックで中身表示*/
@@ -51,6 +50,7 @@
     padding: 5px;
     background: #ffffff;
     opacity: 1;
+    font-family: "ヒラギノ丸ゴ ProN";
 }
 
 .accbox .accshow p {
