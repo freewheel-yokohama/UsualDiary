@@ -48,6 +48,7 @@
     overflow: hidden;
     opacity: 0;
     transition: 0.8s;
+    font-family: "ヒラギノ丸ゴ ProN";
 }
 
 /*クリックで中身表示*/
@@ -59,7 +60,8 @@
 }
 
 .accbox .accshow p {
-    margin: 15px 10px}
+    margin: 15px 10px
+}
 
 /*アイコンを入れ替える*/
 .cssacc:checked + label:before {
